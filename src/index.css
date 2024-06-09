@@ -25,6 +25,15 @@ header {
     padding-block: 10px;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    color: #AAAAAA;
+    height: 75px;
+}
+
 header .site-logo {
     color: black;
     margin-right: auto;
