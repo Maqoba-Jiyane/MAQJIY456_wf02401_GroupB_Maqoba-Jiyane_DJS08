@@ -34,6 +34,17 @@ header {
     height: 75px;
 }
 
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 100px 0px 100px 0px;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+
 header .site-logo {
     color: black;
     margin-right: auto;
