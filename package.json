@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s041bir",
-  "description": "https://v2.scrimba.com/advanced-react-c02h/~02d",
+  "name": "MAQJIY456_wf02401_GroupB_Maqoba-Jiyane_DJS08",
+  "description": "https://v2.scrimba.com/advanced-react-c02h/~04o",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,8 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "firebase": "^10.12.2",
+    "miragejs": "^0.1.48",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "4.7.1",
     "react-router-dom": "6.4.3",
     "vite": "latest"
   },
