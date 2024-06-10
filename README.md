@@ -16,25 +16,46 @@ For your recorded presentation, you will be discussing key concepts related to R
 
 ### Question 1: Explain the Setup and Basic Configuration of React Router
 
-**Key Points to Cover:**
-- What is the purpose of using React Router in a React application?
-- How do you set up React Router using `BrowserRouter` as shown in the lessons?
-- Describe the role of the `<Routes>` and `<Route>` components in defining the navigation structure.
+**What is the purpose of using React Router in a React application?**
+- React Router manages dynamic routing, enabling single-page applications to navigate without full page reloads, enhancing user experience.
+
+**How do you set up React Router using BrowserRouter as shown in the lessons?**
+- Wrap your application in `<BrowserRouter>` in the main entry file (e.g., `main.jsx`), allowing you to use routing components within your app.
+
+**Describe the role of the `<Routes>` and `<Route>` components in defining the navigation structure.**
+- `<Routes>` defines the routing area, and `<Route>` specifies individual routes, mapping paths to components to render when the path matches.
 
 ### Question 2: Application of Route Parameters and Nested Routes
 
-**Key Points to Cover:**
-- Explain what route parameters are and how they are used in React Router, including the use of `useParams()` to access these parameters.
-- Discuss the concept of nested routes as introduced in the lessons. What are nested routes, and how do they benefit the structure of a React application?
-- Provide an example, such as the configuration for nested routes in the VanLife project.
+**Explain what route parameters are and how they are used in React Router, including the use of `useParams()` to access these parameters.**
+- Route parameters are dynamic segments in the URL (e.g., `/user/:id`). Use `useParams()` to access these parameters in the component rendered by the route.
+
+**Discuss the concept of nested routes as introduced in the lessons. What are nested routes, and how do they benefit the structure of a React application?**
+- Nested routes allow components to render child routes, reflecting hierarchical structure and improving code organization and readability.
+
+**Provide an example, such as the configuration for nested routes in the VanLife project.**
+- Example:
+  ```jsx
+  <Routes>
+    <Route path="vans" element={<Vans />}>
+      <Route path=":vanId" element={<VanDetail />} />
+    </Route>
+  </Routes>
+  ```
 
 ### Question 3: Implementation of Navigation Controls and Dynamic Linking
 
-**Key Points to Cover:**
-- How does the `<Link>` component enhance navigation within a React application?
-- Describe the use of `NavLink` for active styling. What makes `NavLink` different from the basic `Link` component?
-- Discuss the use of search parameters and the `useSearchParams` hook to dynamically filter content, as seen in the VanLife project challenges.
+**How does the `<Link>` component enhance navigation within a React application?**
+- `<Link>` enables client-side navigation, updating the URL and rendering new components without a full page reload.
+
+**Describe the use of `NavLink` for active styling. What makes `NavLink` different from the basic `Link` component?**
+- `NavLink` applies an active class/style to the link when its route is active, allowing for dynamic styling based on the current route.
+
+**Discuss the use of search parameters and the `useSearchParams` hook to dynamically filter content, as seen in the VanLife project challenges.**
+- `useSearchParams` provides methods to read and update query strings in the URL, enabling dynamic filtering and state preservation in the URL.
 
 Be prepared to provide code snippets and real-world application examples from your Van Life Project to support your explanations.
 
 Make sure to submit your project to the DJS08 Project Tab on the LMS. Include a link to your Loom Presentation in your README.
+
+
